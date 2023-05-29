@@ -13,6 +13,7 @@
 		F70C84302A240098003FC9A1 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70C842F2A240098003FC9A1 /* MovieListView.swift */; };
 		F78076452A24339800711270 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F78076442A24339800711270 /* db.sqlite */; };
 		F78076482A24347100711270 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78076472A24347100711270 /* MovieItemView.swift */; };
+		F780764B2A2437CD00711270 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = F780764A2A2437CD00711270 /* Blackbird */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F780764B2A2437CD00711270 /* Blackbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +115,9 @@
 			dependencies = (
 			);
 			name = FavouriteMovies;
+			packageProductDependencies = (
+				F780764A2A2437CD00711270 /* Blackbird */,
+			);
 			productName = FavouriteMovies;
 			productReference = F70C841C2A240038003FC9A1 /* FavouriteMovies.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +146,9 @@
 				Base,
 			);
 			mainGroup = F70C84132A240038003FC9A1;
+			packageReferences = (
+				F78076492A2437CD00711270 /* XCRemoteSwiftPackageReference "Blackbird" */,
+			);
 			productRefGroup = F70C841D2A240038003FC9A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -371,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F78076492A2437CD00711270 /* XCRemoteSwiftPackageReference "Blackbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcoarment/Blackbird";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F780764A2A2437CD00711270 /* Blackbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F78076492A2437CD00711270 /* XCRemoteSwiftPackageReference "Blackbird" */;
+			productName = Blackbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F70C84142A240038003FC9A1 /* Project object */;
 }
