@@ -11,6 +11,7 @@
 		F70C84242A240039003FC9A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70C84232A240039003FC9A1 /* Assets.xcassets */; };
 		F70C84272A240039003FC9A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70C84262A240039003FC9A1 /* Preview Assets.xcassets */; };
 		F70C84302A240098003FC9A1 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70C842F2A240098003FC9A1 /* MovieListView.swift */; };
+		F78076452A24339800711270 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F78076442A24339800711270 /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F70C84232A240039003FC9A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F70C84262A240039003FC9A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F70C842F2A240098003FC9A1 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		F78076442A24339800711270 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		F70C842D2A240072003FC9A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F78076442A24339800711270 /* db.sqlite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F70C84272A240039003FC9A1 /* Preview Assets.xcassets in Resources */,
+				F78076452A24339800711270 /* db.sqlite in Resources */,
 				F70C84242A240039003FC9A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
