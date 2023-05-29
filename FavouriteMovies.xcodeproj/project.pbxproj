@@ -14,6 +14,7 @@
 		F78076452A24339800711270 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F78076442A24339800711270 /* db.sqlite */; };
 		F78076482A24347100711270 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78076472A24347100711270 /* MovieItemView.swift */; };
 		F780764B2A2437CD00711270 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = F780764A2A2437CD00711270 /* Blackbird */; };
+		F780764D2A24381900711270 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780764C2A24381900711270 /* AppDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F70C842F2A240098003FC9A1 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		F78076442A24339800711270 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		F78076472A24347100711270 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
+		F780764C2A24381900711270 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F78076472A24347100711270 /* MovieItemView.swift */,
+				F780764C2A24381900711270 /* AppDatabase.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				F78076482A24347100711270 /* MovieItemView.swift in Sources */,
 				F70C84202A240038003FC9A1 /* FavouriteMoviesApp.swift in Sources */,
+				F780764D2A24381900711270 /* AppDatabase.swift in Sources */,
 				F70C84302A240098003FC9A1 /* MovieListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
