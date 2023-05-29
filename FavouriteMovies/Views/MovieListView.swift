@@ -5,15 +5,25 @@
 //  Created by Kiho Okazawa on 2023-05-28.
 //
 
+import Blackbird
 import SwiftUI
 
 struct MovieListView: View {
+    
+    //MARK: Stored properties
+    
+    //The list of favorite movies, as read from the database
+    @BlackbirdLiveModels({ db in
+        try await Movie.read(from: db)
+    }) var movies
+    
+    //MARK: Computed properties
     var body: some View {
         NavigationView {
-            List {
-                MovieItemView(name: "E.t. the Extre-Terrestrial", genre: "Science Fiction", rating: 4)
-                MovieItemView(name: "Ferris Bueller's Day off", genre: "Comedy", rating: 4)
-                MovieItemView(name: "Ghostbusters", genre: "Comedy", rating: 5)
+            List(movies.results) { currentMovie in
+                MovieItemView(name: currentMovie.name, genre: currentMovie.genre,
+                              rating: currentMovie.rating)
+               
             }
             .navigationTitle("Favorite Movies")
         }
