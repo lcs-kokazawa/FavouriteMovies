@@ -11,8 +11,11 @@ struct MovieListView: View {
     var body: some View {
         NavigationView {
             List {
-                
+                MovieItemView(name: "E.t. the Extre-Terrestrial", genre: "Science Fiction", rating: 4)
+                MovieItemView(name: "Ferris Bueller's Day off", genre: "Comedy", rating: 4)
+                MovieItemView(name: "Ghostbusters", genre: "Comedy", rating: 5)
             }
+            .navigationTitle("Favorite Movies")
         }
     }
 }
