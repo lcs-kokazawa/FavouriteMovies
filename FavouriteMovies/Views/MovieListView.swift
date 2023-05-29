@@ -24,7 +24,7 @@ struct MovieListView_Previews: PreviewProvider {
     static var previews: some View {
         MovieListView()
         //Make the database available to all other view through the envirnment
-            .environment(\.blackbirdDatabase, AppDatabase.instance)
+        .environment(\.blackbirdDatabase, AppDatabase.instance)
             
     }
 }

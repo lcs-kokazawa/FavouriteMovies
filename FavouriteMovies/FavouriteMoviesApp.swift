@@ -12,6 +12,8 @@ struct FavouriteMoviesApp: App {
     var body: some Scene {
         WindowGroup {
             MovieListView()
+            //Make the database available to all other view throgh the envirnment
+                .environment(\.blackbirdDatabase, AppDatabase.instance)
         }
     }
 }

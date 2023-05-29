@@ -5,11 +5,15 @@
 //  Created by Kiho Okazawa on 2023-05-28.
 //
 
+import Blackbird
 import SwiftUI
 
 struct AddMovieView: View {
     
     //MARK: Stored properties
+    
+    //Access the conncetion to the database (neededto add a new record)
+    @Environment(\.blackbirdDatabase) var db: Blackbird.Database?
     //Holds details for the new movie
     @State var name = ""
     @State var genre = ""
@@ -37,6 +41,38 @@ struct AddMovieView: View {
                 Spacer()
             }
             .padding(5)
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: {
+                        // Write to database
+                        Task {
+                            try await db!.transaction { core in
+                                try core.query("""
+                                            INSERT INTO movie (
+                                                name,
+                                                genre,
+                                                rating
+                                            )
+                                            VALUES (
+                                                (?),
+                                                (?),
+                                                (?)
+                                            )
+                                            """,
+                                            name,
+                                            genre,
+                                            rating)
+                            }
+                            // Reset input fields after writing to database
+                            name = ""
+                            genre = ""
+                            rating = 3
+                        }
+                    }, label: {
+                        Text("Add")
+                    })
+                }
+            }
         }
     }
 }
@@ -44,5 +80,9 @@ struct AddMovieView: View {
 struct AddMovieView_Previews: PreviewProvider {
     static var previews: some View {
         AddMovieView()
+        //MAKE the database available to all other view through envirnment
+        .environment(\.blackbirdDatabase, AppDatabase.instance)
+            
+            
     }
 }
