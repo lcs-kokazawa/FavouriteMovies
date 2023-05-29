@@ -16,6 +16,7 @@
 		F780764B2A2437CD00711270 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = F780764A2A2437CD00711270 /* Blackbird */; };
 		F780764D2A24381900711270 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780764C2A24381900711270 /* AppDatabase.swift */; };
 		F780764F2A2438B300711270 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780764E2A2438B300711270 /* Movie.swift */; };
+		F78076512A243A1C00711270 /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78076502A243A1C00711270 /* AddMovieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F78076472A24347100711270 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 		F780764C2A24381900711270 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		F780764E2A2438B300711270 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F78076502A243A1C00711270 /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				F78076462A24345A00711270 /* Helpers */,
 				F70C842F2A240098003FC9A1 /* MovieListView.swift */,
+				F78076502A243A1C00711270 /* AddMovieView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				F780764D2A24381900711270 /* AppDatabase.swift in Sources */,
 				F70C84302A240098003FC9A1 /* MovieListView.swift in Sources */,
 				F780764F2A2438B300711270 /* Movie.swift in Sources */,
+				F78076512A243A1C00711270 /* AddMovieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
