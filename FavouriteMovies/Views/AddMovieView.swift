@@ -18,11 +18,26 @@ struct AddMovieView: View {
     @State var name = ""
     @State var genre = ""
     @State var rating = 3
+    @State var squats = 0
     
     //MARK: Computed properties
     var body: some View {
         NavigationView {
             VStack {
+                
+                HStack{
+                    Button(action: {
+                        squats += 1
+                    }, label: {
+                        Text("Squat")
+                    })
+                    .buttonStyle(.borderedProminent)
+                    .tint(.green)
+                    
+                    Text("× \(squats)")
+                }
+            
+                
                 TextField("Enter the movie name", text: $name)
                     .textFieldStyle(.roundedBorder)
                 TextField("What is the movie's genre?", text: $genre)
